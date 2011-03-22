@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytest-filetests
+Version: 0.1
+Summary: Simple plugin for py.test for reading tests from yaml files
+Home-page: http://github.com/cgi/pytest_filetests
+Author: Ermolin Ilya
+Author-email: ermolinis+pytest@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

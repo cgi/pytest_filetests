@@ -1,0 +1,10 @@
+test_this_file_exists:
+  test_desc: "Проверка существования этого файла"
+  assert_file_exists:
+    file_mask: "tests.test_01.yaml"
+    file_count_eval: "count == 1"
+test_this_file_exists:
+  test_desc: "Проверка возвращает ошибку из-за некорректного количества найденных файлов"
+  assert_file_exists:
+    file_mask: "tests.test_01.yaml"
+    file_count_eval: "count < 1"
