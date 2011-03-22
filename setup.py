@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name="pytest_filetests",
     version='0.1',
-    packages=['pytest_filetests'],
+    py_modules=['pytest_filetests'],
     description='Simple plugin for py.test for reading tests from yaml files',
     author='Ermolin Ilya',
     author_email='ermolinis+pytest@gmail.com',
@@ -11,7 +11,7 @@ setup(
     # the following makes a plugin available to py.test
     entry_points={
         'pytest11': [
-            'filetests = pytest_filetests.filetests',
+            'filetests = pytest_filetests',
         ]
     }
 )

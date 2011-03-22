@@ -1,3 +1,4 @@
+import py
 import pytest
 #  Origin version of file was taken from:
 #     http://pytest.org/example/nonpython.html#non-python-tests
@@ -24,6 +25,8 @@ class YamlItem(pytest.Item):
        # !!!TODO: test code
         for name, value in self.spec.items():
             # some custom test execution (dumb example follows)
+            if name in ('assert_file_exists'):
+
             if name != value:
                 raise YamlException(self, name, value)
 
